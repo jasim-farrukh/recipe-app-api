@@ -19,7 +19,7 @@ class CreateTokenView(ObtainAuthToken):
         serializer_class = AuthTokenSerializer
         renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
     except Exception as e:
-        print(f'Fuck', e)
+        print(e)
 
 
 class ManageUserView(generics.RetrieveUpdateAPIView):
